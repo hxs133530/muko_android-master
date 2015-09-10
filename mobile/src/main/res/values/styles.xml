@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <color name="muko_color">#39d1b4</color>
+    <color name="muko_white">#686E65</color>
+    <color name="muko_progress_change">#ffffff</color>
+    <color name="muko_transparent">#80000000</color>
+
+</resources>

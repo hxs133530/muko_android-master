@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:id="@+id/rootView">
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/muko_color"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5"></RelativeLayout>
+
+    <fragment
+        android:name="com.themukobeta.mukobeta.fragments.MainFragment"
+        android:id="@+id/search_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_search"></fragment>
+
+    <fragment
+        android:name="com.themukobeta.mukobeta.fragments.SongsList"
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:layout="@layout/fragment_songs_list"></fragment>
+
+    <!-- minor hack needs to be changed -->
+    <TextView
+        android:id="@+id/dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="asdsad"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/playlist"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/playlist_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_left_action"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_action"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/wave"
+        android:layout_marginBottom="-5dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"/>
+    <RelativeLayout
+        android:id="@+id/muko_play_list_activity_relativelayout_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shadow"
+        android:visibility="gone"
+        android:padding="2dp"
+        android:elevation="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/muko_play_list_activity_textview_songname"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Test"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"></TextView>
+
+    </RelativeLayout>
+  <!--  <com.themuko.muko.visualizer.LineChartView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="-65dp"
+        android:layout_alignParentBottom="true"
+        />-->
+
+</RelativeLayout>

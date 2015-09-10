@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Muko</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="display_text">WHAT DO YOU WANT TO <b>LISTEN?</b></string>
+    <string name="default_query">Happy music with flute!\n</string>
+    <string name="song_unplayable">This song is available only for the premium users</string>
+    <string name="offline_user">You are offline, please ensure you\'re connected to the internet</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

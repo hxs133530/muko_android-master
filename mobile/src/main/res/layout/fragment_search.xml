@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.themukobeta.mukobeta.fragments.MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/login_spotify"
+            android:layout_margin="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logging in"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"/>
+        <!-- TODO: Update blank fragment layout -->
+        <EditText
+            android:id="@+id/query_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:imeOptions="actionDone"
+            android:ems="12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textCursorDrawable="@drawable/custom_color"
+            android:text="@string/default_query"
+            android:visibility="gone"
+            android:textSize="22sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/splash_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp">
+            <TextView
+                android:layout_width = "300dp"
+                android:layout_height = "wrap_content"
+                android:text="WHAT DO YOU WANT TO"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="LISTEN?"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/muko_color"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/play_query"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/query_text"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/br_next_icon"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/record_query"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:src="@drawable/microphone"
+            />
+
+        <com.themukobeta.mukobeta.visualizer.SpeechWave
+            android:id="@+id/speech_wave"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

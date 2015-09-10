@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <ImageView
+        android:id="@+id/Application_Icon"
+        android:background="@drawable/ic_launcher"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/notification_close_button"
+        android:src="@drawable/close_btn"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="5dp"
+        android:alpha="0.5"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/notification_next_button"
+        android:src="@drawable/end_btn"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_toLeftOf="@id/notification_close_button"/>
+
+    <ImageView
+        android:id="@+id/notification_play_button"
+        android:src="@drawable/pause_btn"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="7dp"
+        android:layout_height="36dp"
+        android:layout_width="32dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/notification_next_button"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/Application_Icon"
+        android:layout_toLeftOf="@id/notification_play_button"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Notification_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Song Name, yes thats too small"
+            android:textSize="17sp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/Notification_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Artist Name"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+</RelativeLayout>
